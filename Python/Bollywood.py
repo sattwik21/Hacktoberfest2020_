@@ -6,15 +6,15 @@ print(starred_movie) #output movie name in stars
 
 
 lap = {}                                         #assigning the stars values the letters of movie
-for letter in range(len(selected_movie[0])):
-    if selected_movie[0][letter] not in lap.keys():
+for lettr in range(len(selected_movie[0])):
+    if selected_movie[0][lettr] not in lap.keys():
         movie_name = list()
-        movie_name.append(letter)
-        lap[selected_movie[0][letter]] = movie_name
+        movie_name.append(lettr)
+        lap[selected_movie[0][lettr]] = movie_name
     else:
-        movie_name = lap[selected_movie[0][letter]]
-        movie_name.append(letter)
-        lap[selected_movie[0][letter]] = movie_name
+        movie_name = lap[selected_movie[0][lettr]]
+        movie_name.append(lettr)
+        lap[selected_movie[0][lettr]] = movie_name
 score = 10
 
 print(f'Score = {score}')                              #prints the starting score
